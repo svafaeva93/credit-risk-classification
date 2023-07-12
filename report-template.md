@@ -20,14 +20,14 @@ Oversampled data:
 
 ## Results
 
-* Machine Learning Model 1:
+### Machine Learning Model 1:
   * Description of Model 1 Accuracy, Precision, and Recall scores.
 
 - In comparison to the original dataset, similarly the number of healthy loans is greater than the number of unhealthy loans.
 - The model has a good accuracy model of 99%, the precision score for `0` (healthy loans) is 100% and the precision for `1` labels is not bad at 85%.
 - The recall score is also quite high at 99% for prediction of `0` labels and 91% for high-risk loans with the label `1`.
 
-* Machine Learning Model 2:
+### Machine Learning Model 2:
   * Description of Model 2 Accuracy, Precision, and Recall scores.
 
 - The accuracy score for this model is also quite high at 99%. Looking at the confusion matrix, the oversampled data model did significantly better at predicting false negatives, meaning only 4 loans of 0 type were identified as false negative.

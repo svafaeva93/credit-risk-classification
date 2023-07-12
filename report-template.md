@@ -2,27 +2,21 @@
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
-
 Lending institutions provide loans or assets to borrowers with the anticipation that the borrower will either return the asset or repay the loan. Credit Risk arises when a borrower fails to return the asset or fulfill the loan repayment, resulting in financial losses for the lender. Lenders assess this risk through various methods, but in this study, we will employ Machine Learning to examine a dataset of past lending transactions from a peer-to-peer lending platform. The objective is to develop a model that can assess the creditworthiness of borrowers.
 
-I will use a machine learning model to determine if loans are safe (low-risk) or risky (high-risk) based on the loan status provided by the lending company.
-
-To achieve this, I will employ the Logistic Regression Model, which is commonly used to predict the likelihood of a specific outcome in classification problems.
+I used a machine learning model to determine if loans are safe (low-risk) or risky (high-risk) based on the loan status provided by the lending company. 
 
 After analyzing the lending company's dataset, I developed a Logistic Regression Model that achieved an impressive accuracy score of 99%. However, when it comes to distinguishing non-healthy loans, the model's recall value is lower (0.91) compared to its recall value for healthy loans (0.99). This suggests that the model performs better at predicting loan status as healthy rather than identifying loan status as non-healthy. The reason behind this discrepancy lies in the dataset's imbalance, where the majority of the data corresponds to one class label (in this case, healthy loans greatly outnumber non-healthy loans).
 
+As seen below, the data is highly imbalanced. 
 
+<img width="350" alt="Screenshot 2023-07-12 at 12 54 05 PM" src="https://github.com/svafaeva93/credit-risk-classification/assets/124627601/139ed538-87dd-4989-943a-1211136afe7f">
 
+To improve accuracy and enhance the model's ability to classify non-healthy loans, we can use the RandomOverSampler module from the imbalanced-learn library. This technique involves adding more copies of the minority class (non-healthy 
+loans) to create a balanced dataset.
+Oversampled data: 
 
-
-
+<img width="504" alt="Screenshot 2023-07-12 at 12 57 12 PM" src="https://github.com/svafaeva93/credit-risk-classification/assets/124627601/ed29d7eb-feba-47f9-af07-fe833877a5b8">
 
 ## Results
 

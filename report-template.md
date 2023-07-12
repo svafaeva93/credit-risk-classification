@@ -10,6 +10,20 @@ In this section, describe the analysis you completed for the machine learning mo
 * Describe the stages of the machine learning process you went through as part of this analysis.
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
 
+Lending institutions provide loans or assets to borrowers with the anticipation that the borrower will either return the asset or repay the loan. Credit Risk arises when a borrower fails to return the asset or fulfill the loan repayment, resulting in financial losses for the lender. Lenders assess this risk through various methods, but in this study, we will employ Machine Learning to examine a dataset of past lending transactions from a peer-to-peer lending platform. The objective is to develop a model that can assess the creditworthiness of borrowers.
+
+I will use a machine learning model to determine if loans are safe (low-risk) or risky (high-risk) based on the loan status provided by the lending company.
+
+To achieve this, I will employ the Logistic Regression Model, which is commonly used to predict the likelihood of a specific outcome in classification problems.
+
+After analyzing the lending company's dataset, I developed a Logistic Regression Model that achieved an impressive accuracy score of 99%. However, when it comes to distinguishing non-healthy loans, the model's recall value is lower (0.91) compared to its recall value for healthy loans (0.99). This suggests that the model performs better at predicting loan status as healthy rather than identifying loan status as non-healthy. The reason behind this discrepancy lies in the dataset's imbalance, where the majority of the data corresponds to one class label (in this case, healthy loans greatly outnumber non-healthy loans).
+
+
+
+
+
+
+
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
